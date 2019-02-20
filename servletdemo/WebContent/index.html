@@ -7,9 +7,13 @@
 <body>
 		<div style="text-align:center;">
 	        <form action="/servletdemo/SayHello" method="POST">
-	            输入名字：<input type="text" name="name"/>
+	           	 输入名字：<input type="text" name="name"/>
 	            <input type="submit" value="提交">
 	        </form>
+	    </div>
+	    <br>
+	    <div style="text-align:center;">
+	   		 请<a href="/servletdemo/HeaderServlet?key1=name">点击这里</a>查看所有报头信息
 	    </div>
 </body>
 </html>
