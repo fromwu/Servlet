@@ -3,21 +3,73 @@
   <display-name>servletdemo</display-name>
   <servlet>
     <servlet-name>SayHello</servlet-name>
-    <servlet-class>SayHello</servlet-class>
+    <servlet-class>com.yiibai.SayHello</servlet-class>
   </servlet>
   <servlet-mapping>
     <servlet-name>SayHello</servlet-name>
-    <url-pattern>/com.yiibai/SayHello</url-pattern>
+    <url-pattern>/servletdemo/SayHello</url-pattern>
   </servlet-mapping>
-
-	<servlet>
-	    <servlet-name>HeaderServlet</servlet-name>
-	    <servlet-class>HeaderServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-	    <servlet-name>HeaderServlet</servlet-name>
-	    <url-pattern>/com.yiibai/HeaderServlet</url-pattern>
-	</servlet-mapping>
+  <servlet>
+    <servlet-name>HeaderServlet</servlet-name>
+    <servlet-class>com.yiibai.HeaderServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>HeaderServlet</servlet-name>
+    <url-pattern>/servletdemo/HeaderServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>Login</servlet-name>
+    <servlet-class>com.yiibai.Login</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>Login</servlet-name>
+    <url-pattern>/servletdemo/Login</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <servlet-class>com.yiibai.WelcomeServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WelcomeServlet</servlet-name>
+    <url-pattern>/servletdemo/WelcomeServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>RedirectServlet</servlet-name>
+    <servlet-class>com.yiibai.RedirectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>RedirectServlet</servlet-name>
+    <url-pattern>/servletdemo/RedirectServlet</url-pattern>
+  </servlet-mapping>
+  <servlet>
+    <servlet-name>YiiSearcher</servlet-name>
+    <servlet-class>com.yiibai.YiiSearcher</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>YiiSearcher</servlet-name>
+    <url-pattern>/servletdemoYiiSearcher</url-pattern>
+  </servlet-mapping>
+  
+   <servlet>
+    <servlet-name>ConfigServletAll</servlet-name>
+    <servlet-class>com.yiibai.ConfigServletAll</servlet-class>
+	    	<init-param>
+	            <param-name>mssql_driver</param-name>
+	            <param-value>com.mssql.jdbc.Driver</param-value>
+	        </init-param>
+	        <init-param>
+	            <param-name>username</param-name>
+	            <param-value>root</param-value>
+	        </init-param>
+	        <init-param>
+	            <param-name>passwd</param-name>
+	            <param-value>123456</param-value>
+	        </init-param>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ConfigServletAll</servlet-name>
+    <url-pattern>/ConfigServletAll</url-pattern>
+  </servlet-mapping>
   
   <welcome-file-list>
     <welcome-file>index.html</welcome-file>
